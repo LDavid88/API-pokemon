@@ -15,7 +15,7 @@ def index():
         height = pokemon['height']
         weight = pokemon['weight']
         info = {'name': name, 'id': id, 'height': height, 'weight': weight}
-        return render_template("index.html", info=info)
+        return render_template("index.html", info=name)
     else:
         return render_template("index.html")
 
