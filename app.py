@@ -24,6 +24,7 @@ def get_pokemon_info(name):
     url = f"{BASE_URL}/pokemon/{name}"
     response = requests.get(url)
     if response.status_code == 200:
+        print("Searching...")
         json = response.json()
         return json
     else:
